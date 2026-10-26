@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-An unofficial, desktop-only Obsidian companion plugin for [Zotero Citations](https://github.com/WesternGua/obsidian-zotero-citations). It adds a live **References** sidebar while preserving Zotero Citations' existing footnotes.
+An unofficial, desktop-only Obsidian companion plugin for [Zotero Citations](https://github.com/WesternGua/obsidian-zotero-citations). It adds a live **References** sidebar while preserving Zotero Citations' existing footnotes，Click the arrow to quickly locate the reference in Zotero and start reading.
 
 **Version:** 0.3.2 · **Status:** Manual installation (not currently listed in Obsidian's Community Plugins browser).
 
@@ -106,14 +106,6 @@ The plugin caches formatted entries for faster display. When Zotero is inaccessi
 - Desktop Obsidian only. The copy action produces plain text, without italics/rich formatting.
 - Most sidebar interface labels are currently in Chinese. English users can find the sidebar via its quote icon or the `Zotero References` command search term.
 
-No npm build is needed: `main.js`, `manifest.json`, and `styles.css` are ready to run. To run the regression suite, install [Node.js](https://nodejs.org/) and execute:
-
-```sh
-node test.js
-node --check main.js
-```
-
-This project is unofficial and is not affiliated with Zotero, the developers of Zotero Citations, or Pandoc Reference List. For useful bug reports, include an anonymized citation marker, Zotero/Obsidian versions, and whether the item is in a personal or group library.
 
 ## License
 

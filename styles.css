@@ -1,0 +1,74 @@
+.zcr-view {
+  padding: 0 12px 18px;
+  overflow-y: auto;
+}
+.zcr-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0 10px;
+}
+.zcr-title {
+  font-size: var(--font-ui-medium);
+  font-weight: var(--font-semibold);
+}
+.zcr-count {
+  font-size: var(--font-ui-smaller);
+  border-radius: 12px;
+  padding: 2px 7px;
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+}
+.zcr-actions { display: flex; gap: 2px; }
+.zcr-icon-button {
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.zcr-icon-button:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.zcr-icon-button:disabled { cursor: not-allowed; opacity: 0.3; }
+.zcr-icon-button svg { width: 17px; height: 17px; }
+.zcr-search {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+}
+.zcr-search[hidden] { display: none; }
+.zcr-status { color: var(--text-muted); font-size: var(--font-ui-smaller); margin: 8px 0 10px; }
+.zcr-empty { color: var(--text-muted); padding: 20px 6px; line-height: 1.7; }
+.zcr-list { display: flex; flex-direction: column; gap: 0; }
+.zcr-entry {
+  display: grid;
+  grid-template-columns: 1.35em minmax(0, 1fr) 24px;
+  column-gap: 4px;
+  align-items: start;
+  padding: 6px 0 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.zcr-entry:last-child { border-bottom: none; }
+.zcr-entry-number {
+  color: var(--text-normal);
+  line-height: 1.5;
+  font-size: var(--font-text-size);
+}
+.zcr-entry-content {
+  min-width: 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.zcr-entry-content:hover { background: var(--background-modifier-hover); }
+.zcr-entry-content:focus-visible { outline: 2px solid var(--interactive-accent); }
+.zcr-entry-body { overflow-wrap: anywhere; font-size: var(--font-text-size); line-height: 1.55; }
+.zcr-entry-body .csl-bib-body, .zcr-entry-body .csl-entry { margin: 0; }
+.zcr-entry-body p { margin: 0; }
+.zcr-entry-body a { color: var(--link-color); }
+.zcr-entry-actions { display: flex; flex-direction: column; align-items: center; }
+.zcr-entry-actions .zcr-icon-button { margin-top: 0; }

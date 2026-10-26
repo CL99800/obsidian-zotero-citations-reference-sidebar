@@ -1,0 +1,9 @@
+{
+  "id": "zotero-citations-reference-sidebar",
+  "name": "Zotero Citations Reference Sidebar",
+  "version": "0.3.2",
+  "minAppVersion": "1.5.7",
+  "description": "A read-only, live reference sidebar for footnotes created by the Zotero Citations plugin.",
+  "author": "ChatGPT",
+  "isDesktopOnly": true
+}

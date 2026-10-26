@@ -1,0 +1,8 @@
+# Per-vault plugin settings/cache may contain private bibliography data
+data.json
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*

@@ -2,7 +2,7 @@
 
 [English](README.md) | **简体中文**
 
-这是一个为 [Zotero Citations](https://github.com/WesternGua/obsidian-zotero-citations) 开发的非官方 Obsidian 桌面插件：**保留 Zotero Citations 的原有脚注，同时在右侧自动显示参考文献列表**。
+这是一个为 [Zotero Citations](https://github.com/WesternGua/obsidian-zotero-citations) 开发的非官方 Obsidian 桌面插件：**保留 Zotero Citations 的原有脚注，同时在右侧自动显示参考文献列表,可以快速找到zotero对应的文献**。
 
 **当前版本：** v0.3.2。**安装方式：** 手动安装（目前尚未上架 Obsidian 社区插件市场）。
 
@@ -93,9 +93,6 @@ Zotero 本地 API 的默认地址为 `http://127.0.0.1:23119/api/`。本插件�
 | 点击刷新图标 | 重新向 Zotero 读取参考文献 |
 | 点击复制图标 | 复制当前参考文献列表的纯文本 |
 
-个人文库条目的跳转地址类似 `zotero://select/library/items/ITEMKEY`；识别到群组文库时使用 `zotero://select/groups/GROUPID/items/ITEMKEY`。如果 Zotero 未连接、无法确认群组编号，箭头会**先尝试个人文库**。
-
-插件会缓存最近成功读取的书目信息，以便在暂时离线时显示。如果是第一次读取且 Zotero 无法连接，只能用脚注原文作为备用显示，**原文可能是缩写，并不保证是完整书目**。
 
 ## 隐私、限制与开发
 
@@ -104,16 +101,6 @@ Zotero 本地 API 的默认地址为 `http://127.0.0.1:23119/api/`。本插件�
 - 不修改笔记内容，不会在文章末尾插入参考文献列表，也不会导出 Word 文档。
 - 如果不同文库恰好出现相同的 Zotero Item Key，优先查找个人文库。
 - 只支持 **Obsidian 桌面版**。复制操作为纯文本，不保留斜体等富文本格式。
-- 插件界面目前主要使用中文提示，英文用户可以按操作图标及 `Zotero References` 命令文字使用。
-
-源文件 `main.js`、`manifest.json`、`styles.css` 可以直接运行，**不需要 npm 构建**。开发者安装 [Node.js](https://nodejs.org/) 后，可以执行：
-
-```sh
-node test.js
-node --check main.js
-```
-
-本项目是独立社区作品，与 Zotero、Zotero Citations、Pandoc Reference List 的原作者不存在官方合作或隶属关系。反馈问题时，建议附上脱敏后的引用 Markdown、Obsidian/Zotero 版本，以及文献所在的个人或群组文库信息。
 
 ## 开源许可证
 
